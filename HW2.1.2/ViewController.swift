@@ -7,8 +7,18 @@
 
 import UIKit
 
+enum trafficLights {
+    case red, yellow, green
+}
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var switchButton: UIButton!
+    
+    @IBOutlet weak var redLightView: UIView!
+    @IBOutlet weak var yellowLightView: UIView!
+    @IBOutlet weak var greenLightView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
