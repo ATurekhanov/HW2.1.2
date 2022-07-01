@@ -38,13 +38,16 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2b-Fm-f0D">
-                                <rect key="frame" x="164.66666666666666" y="608.66666666666663" width="85" height="37.333333333333371"/>
+                                <rect key="frame" x="165.33333333333334" y="608" width="83.666666666666657" height="38"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START">
-                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="switchButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Miz-2R-3xZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,7 +69,7 @@
                     <connections>
                         <outlet property="greenLightView" destination="F6C-H5-Ev2" id="pm4-V8-LdR"/>
                         <outlet property="redLightView" destination="PDK-qK-P8p" id="814-lm-kau"/>
-                        <outlet property="switchButton" destination="n2b-Fm-f0D" id="Y2b-PI-MJc"/>
+                        <outlet property="switchButton" destination="n2b-Fm-f0D" id="viW-ei-4be"/>
                         <outlet property="yellowLightView" destination="BgW-RE-kax" id="sVQ-Nl-h0t"/>
                     </connections>
                 </viewController>
